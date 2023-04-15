@@ -1,0 +1,8 @@
+print([n for n in range(5)])
+print(tuple(n for n in range(5)))
+print(tuple([n for n in range(5)]))
+print([(n,2) for n in range(5)])
+print([(n,m) for n in range(5) for m in range(10, 12)])
+print([(n,m) for n in range(5) for m in range(10, 12) if n != 0])
+print(dict([(n,m) for n in range(5) for m in range(10, 12)]))
+print(dict([(n,m) for n in range(5) for m in range(10, 12) if n != 0 and m != 11]))
