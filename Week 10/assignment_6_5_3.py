@@ -31,7 +31,7 @@ class LectureScore:
             raise ValueError(f'Score is out of range. Should be in {LectureScore.RANGE_OF_SCORE}.')
 
     def get_total_score(self):
-        return sum(self.get_lecture_sum(item) for item in self.lectures.keys())
+        return sum(self.get_lecture_sum(key) for key in self.lectures.keys())
 
     def get_lecture_average(self, lec_name: str):
         return self.get_lecture_sum(lec_name) / len(self.get_lecture_scores(lec_name))
