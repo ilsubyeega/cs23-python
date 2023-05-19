@@ -39,7 +39,7 @@ class LectureScore:
     def get_total_score(self):
         return sum(self.get_lecture_sum(key) for key in self.lectures.keys())
 
-    def get_lecture_average(self, lec_name: s   tr):
+    def get_lecture_average(self, lec_name: str):
         return self.get_lecture_sum(lec_name) / len(self.get_lecture_scores(lec_name))
 
     def get_average(self):
