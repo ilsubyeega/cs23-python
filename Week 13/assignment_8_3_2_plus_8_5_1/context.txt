@@ -1,0 +1,4 @@
+from ~ import 문을 이용하여 utility 패키지에 있는 account, lecture 모듈의 클래스를 이용하여 객체를 생성하고 이용하는 프로그램.
+
+패키지 utility의 account 모듈에 정의된 클래스 Account는 한 거래 당 10,000원보다 큰 금액을 저금하거나, 인출할려고 시도하면 현재의 구현은 아무런 처리를 하지 않는다. 다라서 deposit() 또는 withdraw() 메소드의 호출자(caller)는 정상 처리 여부를 확인할 수 잇는 방법이 없다. 이 경우 ValueError 예외가 정상 처리되지 않았음을 메소드 호출자에게 알릴 수 있으므로 이를 위해 Account 클래스를 수정하라.
+Note: account_test_main.py 에 구현됨.
