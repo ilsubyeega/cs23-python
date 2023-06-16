@@ -17,7 +17,6 @@ class GradeScore(Score):
 
     def setPoint(self, point):
         super().setPoint(point)
-
         if point >= 90:
             self.grade = 'A'
         elif point >= 80:
